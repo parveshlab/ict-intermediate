@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <form action="success.html" style="text-align: center;">
+        <h1>signup</h1>
+    <p>
+        <label for="email">email</label>
+        <input type="text" id="field1" onkeyup="return validateEmail()" placeholder="enter your e-mail id">
+        <span id="err1"></span>
+    </p>
+    <p>
+        <label for="">password</label>
+        <input type="password" name="" id="field2" onkeyup="return validatePassword()" placeholder="Enter your password">
+        <span id="err2"></span>
+    </p>
+   <p>
+        <label for="phone number">phone number</label>
+        <input type="text" id="field3" onkeyup="return validatePhonenumber()"placeholder="enter your phone number">
+        <span id="err3"></span>
+    </p>
+    <p>
+        <button  onclick=" return  verify()">log in</button>
+    </p>
+    <script src="validation.js"></script>
+    </form>
+</body>
+</html>
